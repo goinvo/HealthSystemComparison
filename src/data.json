@@ -1,0 +1,330 @@
+[
+  {
+    "name": "Australia",
+    "type": "Universal"
+  },
+  {
+    "name": "Bahrain",
+    "type": "Universal"
+  },
+  {
+    "name": "Bhutan",
+    "type": "Universal"
+  },
+  {
+    "name": "Botswana",
+    "type": "Universal"
+  },
+  {
+    "name": "Brazil",
+    "type": "Universal"
+  },
+  {
+    "name": "Brunei",
+    "type": "Universal"
+  },
+  {
+    "name": "Canada",
+    "type": "Universal"
+  },
+  {
+    "name": "Cuba",
+    "type": "Universal"
+  },
+  {
+    "name": "Denmark",
+    "type": "Universal"
+  },
+  {
+    "name": "Finland",
+    "type": "Universal"
+  },
+  {
+    "name": "Greece",
+    "type": "Universal"
+  },
+  {
+    "name": "Iceland",
+    "type": "Universal"
+  },
+  {
+    "name": "Ireland",
+    "type": "Universal"
+  },
+  {
+    "name": "Italy",
+    "type": "Universal"
+  },
+  {
+    "name": "Kuwait",
+    "type": "Universal"
+  },
+  {
+    "name": "Malta",
+    "type": "Universal"
+  },
+  {
+    "name": "New Zealand",
+    "type": "Universal"
+  },
+  {
+    "name": "North Korea",
+    "type": "Universal"
+  },
+  {
+    "name": "Norway",
+    "type": "Universal"
+  },
+  {
+    "name": "Oman",
+    "type": "Universal"
+  },
+  {
+    "name": "Portugal",
+    "type": "Universal"
+  },
+  {
+    "name": "San Marino",
+    "type": "Universal"
+  },
+  {
+    "name": "Saudi Arabia",
+    "type": "Universal"
+  },
+  {
+    "name": "Singapore",
+    "type": "Universal"
+  },
+  {
+    "name": "South Africa",
+    "type": "Universal"
+  },
+  {
+    "name": "Spain",
+    "type": "Universal"
+  },
+  {
+    "name": "Sri Lanka",
+    "type": "Universal"
+  },
+  {
+    "name": "Sweden",
+    "type": "Universal"
+  },
+  {
+    "name": "Taiwan",
+    "type": "Universal"
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "type": "Universal"
+  },
+  {
+    "name": "United Kingdom",
+    "type": "Universal"
+  },
+  {
+    "name": "Albania",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Andorra",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Belgium",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Bulgaria",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "China",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Colombia",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Croatia",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Czechia",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Estonia",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "France",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Hungary",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Iran",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Japan",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Latvia",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Lithuania",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Luxembourg",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Monaco",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Moldova",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Montenegro",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Poland",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Qatar",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Romania",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Russia",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Serbia",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Slovakia",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Solvenia",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "South Korea",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Ukraine",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "United Arab Emirates",
+    "type": "Universal-Income"
+  },
+  {
+    "name": "Algeria",
+    "type": "Private-Public"
+  },
+  {
+    "name": "Argentina",
+    "type": "Private-Public"
+  },
+  {
+    "name": "Austria",
+    "type": "Private-Public"
+  },
+  {
+    "name": "Chile",
+    "type": "Private-Public"
+  },
+  {
+    "name": "Cyprus",
+    "type": "Private-Public"
+  },
+  {
+    "name": "Germany",
+    "type": "Private-Public"
+  },
+  {
+    "name": "Israel",
+    "type": "Private-Public"
+  },
+  {
+    "name": "Mexico",
+    "type": "Private-Public"
+  },
+  {
+    "name": "Peru",
+    "type": "Private-Public"
+  },
+  {
+    "name": "Turkey",
+    "type": "Private-Public"
+  },
+  {
+    "name": "Liechtenstein",
+    "type": "Private-Subsidized"
+  },
+  {
+    "name": "Netherlands",
+    "type": "Private-Subsidized"
+  },
+  {
+    "name": "Switzerland",
+    "type": "Private-Subsidized"
+  },
+  {
+    "name": "Dem. Rep. Congo",
+    "type": "Private-Partially-Subsidized"
+  },
+  {
+    "name": "Egypt",
+    "type": "Private-Partially-Subsidized"
+  },
+  {
+    "name": "Ethiopia",
+    "type": "Private-Partially-Subsidized"
+  },
+  {
+    "name": "India",
+    "type": "Private-Partially-Subsidized"
+  },
+  {
+    "name": "Indonesia",
+    "type": "Private-Partially-Subsidized"
+  },
+  {
+    "name": "Jordan",
+    "type": "Private-Partially-Subsidized"
+  },
+  {
+    "name": "Paraguay",
+    "type": "Private-Partially-Subsidized"
+  },
+  {
+    "name": "TODO: United Arab Emirates #2",
+    "type": "Private-Partially-Subsidized"
+  },
+  {
+    "name": "United States of America",
+    "type": "Private-Partially-Subsidized"
+  }
+]
