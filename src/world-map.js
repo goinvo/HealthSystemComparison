@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, createRef } from 'react'
 import { extent } from 'd3-array'
 import { geoMercator, geoPath } from 'd3-geo'
 import { scaleLinear, scaleOrdinal } from 'd3-scale'
@@ -17,11 +17,25 @@ class WorldMap extends Component {
   constructor(props) {
     super(props);
 
+    const width = 800;
+    this.heightFactor = .55;
+
     this.state = {
-      width: 1200,
-      height: 900,
+      width,
+      height: width * this.heightFactor,
       hale: false
     }
+
+    this.container = createRef();
+  }
+
+  componentDidMount() {
+    const width = this.container.current.offsetWidth;
+
+    this.setState({
+      width,
+      height: width * this.heightFactor
+    })
   }
 
   setHale = (e) => {
@@ -29,10 +43,12 @@ class WorldMap extends Component {
   }
 
   render() {
+    const { width, height } = this.state;
+
     const data = feature(countries, { type: "GeometryCollection", geometries: countries.objects.countries.geometries.filter(d => d.id !== antarcticaId) });
     const features = data.features.filter(d => d.id !== antarcticaId);
     const projection = geoMercator()
-      .fitSize([this.state.width, this.state.height], data);
+      .fitSize([width, height], data);
     const mappedData = new Map(countryData.map(country => {
         return [country.name, { type: country.type, hale: country.hale }];
       }));
@@ -46,8 +62,8 @@ class WorldMap extends Component {
       .range([0, 1]);
 
     return (
-      <div>
-        <svg width={ this.state.width } height={ this.state.height }>
+      <div className="world-map" ref={this.container}>
+        <svg width={ width } height={ height }>
           <g className="countries">
             {
               features.map((d, i) => {
@@ -70,7 +86,7 @@ class WorldMap extends Component {
         </svg>
         <ul className="legend">
           { systemTypes.map((d, i) => {
-            return <li key={d}>{d}: <div className="legend__block" style={{ backgroundColor: color(d) }}></div></li>
+            return <li key={d}><div className="legend__block" style={{ backgroundColor: color(d) }}></div> {d}</li>
           })}
         </ul>
         <input type="checkbox" checked={this.state.hale} onChange={this.setHale} />

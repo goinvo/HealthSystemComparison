@@ -1,0 +1,68 @@
+$header-height: 60px;
+$map-width: 80%;
+
+$color--gray: #f0f0f0;
+
+.App {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $map-width;
+  height: $header-height;
+  padding: 10px 20px;
+  border-bottom: 1px solid $color--gray;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.world-map {
+  width: 100%;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__block {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+}
+
+.map-container {
+  position: fixed;
+  top: $header-height;
+  left: 0;
+  width: $map-width;
+  padding: 20px;
+}
+
+.content-container {
+  width: calc(100% - #{$map-width});
+  border-left: 1px solid $color--gray;
+  padding-bottom: 20px;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 20px;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
+}
