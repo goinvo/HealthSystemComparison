@@ -1,323 +1,403 @@
 [
   {
     "name": "Australia",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 71.9
   },
   {
     "name": "Bahrain",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 67.0
   },
   {
     "name": "Bhutan",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 61.2
   },
   {
     "name": "Botswana",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 56.9
   },
   {
     "name": "Brazil",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 65.5
   },
   {
     "name": "Brunei",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 70.4
   },
   {
     "name": "Canada",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 72.3
   },
   {
     "name": "Cuba",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 69.2
   },
   {
     "name": "Denmark",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 71.2
   },
   {
     "name": "Finland",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 71.0
   },
   {
     "name": "Greece",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 71.9
   },
   {
     "name": "Iceland",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 72.7
   },
   {
     "name": "Ireland",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 71.5
   },
   {
     "name": "Italy",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 72.8
   },
   {
     "name": "Kuwait",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 65.8
   },
   {
     "name": "Malta",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 71.8
   },
   {
     "name": "New Zealand",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 71.6
   },
   {
     "name": "North Korea",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 64.0
   },
   {
     "name": "Norway",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 72.0
   },
   {
     "name": "Oman",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 66.7
   },
   {
     "name": "Portugal",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 71.4
   },
   {
     "name": "San Marino",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": null
   },
   {
     "name": "Saudi Arabia",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 64.5
   },
   {
     "name": "Singapore",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 73.9
   },
   {
     "name": "South Africa",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 54.5
   },
   {
     "name": "Spain",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 72.4
   },
   {
     "name": "Sri Lanka",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 67.0
   },
   {
     "name": "Sweden",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 72.0
   },
   {
     "name": "Taiwan",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": null
   },
   {
     "name": "Trinidad and Tobago",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 63.3
   },
   {
     "name": "United Kingdom",
-    "type": "Universal"
+    "type": "Universal",
+    "hale": 71.4
   },
   {
     "name": "Albania",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 68.8
   },
   {
     "name": "Andorra",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": null
   },
   {
     "name": "Belgium",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 71.1
   },
   {
     "name": "Bulgaria",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 66.4
   },
   {
     "name": "China",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 68.5
   },
   {
     "name": "Colombia",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 65.1
   },
   {
     "name": "Croatia",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 69.4
   },
   {
     "name": "Czechia",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 69.4
   },
   {
     "name": "Estonia",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 68.9
   },
   {
     "name": "France",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 72.6
   },
   {
     "name": "Hungary",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 67.4
   },
   {
     "name": "Iran",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 66.6
   },
   {
     "name": "Japan",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 74.9
   },
   {
     "name": "Latvia",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 67.1
   },
   {
     "name": "Lithuania",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 66.0
   },
   {
     "name": "Luxembourg",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 71.8
   },
   {
     "name": "Monaco",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": null
   },
   {
     "name": "Moldova",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 64.8
   },
   {
     "name": "Montenegro",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 67.9
   },
   {
     "name": "Poland",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 68.7
   },
   {
     "name": "Qatar",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 69.1
   },
   {
     "name": "Romania",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 66.8
   },
   {
     "name": "Russia",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 63.3
   },
   {
     "name": "Serbia",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 67.7
   },
   {
     "name": "Slovakia",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 68.1
   },
   {
     "name": "Solvenia",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 71.1
   },
   {
     "name": "South Korea",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 73.2
   },
   {
     "name": "Ukraine",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 64.1
   },
   {
     "name": "United Arab Emirates",
-    "type": "Universal-Income"
+    "type": "Universal-Income",
+    "hale": 67.9
   },
   {
     "name": "Algeria",
-    "type": "Private-Public"
+    "type": "Private-Public",
+    "hale": 66.0
   },
   {
     "name": "Argentina",
-    "type": "Private-Public"
+    "type": "Private-Public",
+    "hale": 67.6
   },
   {
     "name": "Austria",
-    "type": "Private-Public"
+    "type": "Private-Public",
+    "hale": 71.9
   },
   {
     "name": "Chile",
-    "type": "Private-Public"
+    "type": "Private-Public",
+    "hale": 70.4
   },
   {
     "name": "Cyprus",
-    "type": "Private-Public"
+    "type": "Private-Public",
+    "hale": 71.3
   },
   {
     "name": "Germany",
-    "type": "Private-Public"
+    "type": "Private-Public",
+    "hale": 71.3
   },
   {
     "name": "Israel",
-    "type": "Private-Public"
+    "type": "Private-Public",
+    "hale": 72.8
   },
   {
     "name": "Mexico",
-    "type": "Private-Public"
+    "type": "Private-Public",
+    "hale": 67.4
   },
   {
     "name": "Peru",
-    "type": "Private-Public"
+    "type": "Private-Public",
+    "hale": 65.6
   },
   {
     "name": "Turkey",
-    "type": "Private-Public"
+    "type": "Private-Public",
+    "hale": 66.2
   },
   {
     "name": "Liechtenstein",
-    "type": "Private-Subsidized"
+    "type": "Private-Subsidized",
+    "hale": null
   },
   {
     "name": "Netherlands",
-    "type": "Private-Subsidized"
+    "type": "Private-Subsidized",
+    "hale": 72.2
   },
   {
     "name": "Switzerland",
-    "type": "Private-Subsidized"
+    "type": "Private-Subsidized",
+    "hale": 73.1
   },
   {
     "name": "Dem. Rep. Congo",
-    "type": "Private-Partially-Subsidized"
+    "type": "Private-Partially-Subsidized",
+    "hale": 56.6
   },
   {
     "name": "Egypt",
-    "type": "Private-Partially-Subsidized"
+    "type": "Private-Partially-Subsidized",
+    "hale": 62.2
   },
   {
     "name": "Ethiopia",
-    "type": "Private-Partially-Subsidized"
+    "type": "Private-Partially-Subsidized",
+    "hale": 56.1
   },
   {
     "name": "India",
-    "type": "Private-Partially-Subsidized"
+    "type": "Private-Partially-Subsidized",
+    "hale": 59.5
   },
   {
     "name": "Indonesia",
-    "type": "Private-Partially-Subsidized"
+    "type": "Private-Partially-Subsidized",
+    "hale": 62.2
   },
   {
     "name": "Jordan",
-    "type": "Private-Partially-Subsidized"
+    "type": "Private-Partially-Subsidized",
+    "hale": 65.0
   },
   {
     "name": "Paraguay",
-    "type": "Private-Partially-Subsidized"
+    "type": "Private-Partially-Subsidized",
+    "hale": 65.2
   },
   {
     "name": "TODO: United Arab Emirates #2",
@@ -325,6 +405,287 @@
   },
   {
     "name": "United States of America",
-    "type": "Private-Partially-Subsidized"
+    "type": "Private-Partially-Subsidized",
+    "hale": 68.1
+  },
+  {
+    "name": "Costa Rica",
+    "type": null,
+    "hale": 69.7
+  },
+  {
+    "name": "Maldives",
+    "type": null,
+    "hale": 69.6
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "type": null,
+    "hale": 68.6
+  },
+  {
+    "name": "Uruguay",
+    "type": null,
+    "hale": 67.9
+  },
+  {
+    "name": "Panama",
+    "type": null,
+    "hale": 67.7
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "type": null,
+    "hale": 67.5
+  },
+  {
+    "name": "Macedonia",
+    "type": null,
+    "hale": 67.5
+  },
+  {
+    "name": "Ecuador",
+    "type": null,
+    "hale": 67.0
+  },
+  {
+    "name": "Jamaica",
+    "type": null,
+    "hale": 66.9
+  },
+  {
+    "name": "Thailand",
+    "type": null,
+    "hale": 66.8
+  },
+  {
+    "name": "Armenia",
+    "type": null,
+    "hale": 66.8
+  },
+  {
+    "name": "Mauritius",
+    "type": null,
+    "hale": 66.8
+  },
+  {
+    "name": "Tunisia",
+    "type": null,
+    "hale": 66.7
+  },
+  {
+    "name": "Bahamas",
+    "type": null,
+    "hale": 66.6
+  },
+  {
+    "name": "Vietnam",
+    "type": null,
+    "hale": 66.6
+  },
+  {
+    "name": "Barbados",
+    "type": null,
+    "hale": 66.6
+  },
+  {
+    "name": "Samoa",
+    "type": null,
+    "hale": 66.6
+  },
+  {
+    "name": "Malaysia",
+    "type": null,
+    "hale": 66.5
+  },
+  {
+    "name": "Georgia",
+    "type": null,
+    "hale": 66.5
+  },
+  {
+    "name": "Saint Lucia",
+    "type": null,
+    "hale": 66.1
+  },
+  {
+    "name": "Tonga",
+    "type": null,
+    "hale": 66.0
+  },
+  {
+    "name": "Lebanon",
+    "type": null,
+    "hale": 65.7
+  },
+  {
+    "name": "Seychelles",
+    "type": null,
+    "hale": 65.5
+  },
+  {
+    "name": "Venezuela",
+    "type": null,
+    "hale": 65.2
+  },
+  {
+    "name": "Dominican Republic",
+    "type": null,
+    "hale": 65.1
+  },
+  {
+    "name": "Belarus",
+    "type": null,
+    "hale": 65.1
+  },
+  {
+    "name": "Grenada",
+    "type": null,
+    "hale": 65.0
+  },
+  {
+    "name": "Honduras",
+    "type": null,
+    "hale": 64.9
+  },
+  {
+    "name": "Morocco",
+    "type": null,
+    "hale": 64.9
+  },
+  {
+    "name": "Azerbaijan",
+    "type": null,
+    "hale": 64.7
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "type": null,
+    "hale": 64.6
+  },
+  {
+    "name": "Vanuatu",
+    "type": null,
+    "hale": 64.6
+  },
+  {
+    "name": "Cape Verde",
+    "type": null,
+    "hale": 64.4
+  },
+  {
+    "name": "El Salvador",
+    "type": null,
+    "hale": 64.1
+  },
+  {
+    "name": "Libya",
+    "type": null,
+    "hale": 63.8
+  },
+  {
+    "name": "Kyrgyzstan",
+    "type": null,
+    "hale": 63.8
+  },
+  {
+    "name": "Nicaragua",
+    "type": null,
+    "hale": 63.7
+  },
+  {
+    "name": "Kazakhstan",
+    "type": null,
+    "hale": 63.3
+  },
+  {
+    "name": "Suriname",
+    "type": null,
+    "hale": 63.1
+  },
+  {
+    "name": "Fiji",
+    "type": null,
+    "hale": 62.9
+  },
+  {
+    "name": "Micronesia",
+    "type": null,
+    "hale": 62.5
+  },
+  {
+    "name": "Uzbekistan",
+    "type": null,
+    "hale": 62.4
+  },
+  {
+    "name": "Bangladesh",
+    "type": null,
+    "hale": 62.3
+  },
+  {
+    "name": "Belize",
+    "type": null,
+    "hale": 62.3
+  },
+  {
+    "name": "Bolivia",
+    "type": null,
+    "hale": 62.2
+  },
+  {
+    "name": "Guatemala",
+    "type": null,
+    "hale": 62.1
+  },
+  {
+    "name": "Tajikistan",
+    "type": null,
+    "hale": 62.1
+  },
+  {
+    "name": "Solomon Islands",
+    "type": null,
+    "hale": 62.1
+  },
+  {
+    "name": "Mongolia",
+    "type": null,
+    "hale": 62.0
+  },
+  {
+    "name": "Nepal",
+    "type": null,
+    "hale": 61.1
+  },
+  {
+    "name": "Philippines",
+    "type": null,
+    "hale": 61.1
+  },
+  {
+    "name": "Timor-Leste",
+    "type": null,
+    "hale": 60.7
+  },
+  {
+    "name": "Iraq",
+    "type": null,
+    "hale": 60.0
+  },
+  {
+    "name": "Turkmenistan",
+    "type": null,
+    "hale": 59.8
+  },
+  {
+    "name": "Myanmar",
+    "type": null,
+    "hale": 59.2
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "type": null,
+    "hale": 59.1
   }
 ]
