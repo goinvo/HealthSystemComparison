@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ScrollSpy from 'react-scrollspy';
+import { scaleLinear } from 'd3-scale';
+import { extent } from 'd3-array';
 
 import './App.scss';
 
@@ -12,12 +14,30 @@ class App extends Component {
     super(props);
 
     this.state = {
-      currentSection: 'intro'
+      currentSection: 'intro',
+      data: countryData.map(d => Object.assign(d, { opacity: 1 }))
+    }
+
+    const haleData = countryData.map(d => d.hale);
+    this.haleScale = scaleLinear()
+      .domain(extent(haleData))
+      .range([0, 1]);
+  }
+
+  getOpacity = (d, currentSection) => {
+    switch (currentSection) {
+      case 'hale':
+        return this.haleScale(d.hale);
+      default:
+        return 1;
     }
   }
 
   onScrollSpyUpdate = (current) => {
-    this.setState({ currentSection: current.id });
+    this.setState({
+      currentSection: current.id,
+      data: this.state.data.map(d => Object.assign(d, { opacity: this.getOpacity(d, current.id) }))
+    });
   }
 
   render() {
@@ -28,7 +48,7 @@ class App extends Component {
           <h1>Healthcare Systems Compared</h1>
         </div>
         <div className="map-container">
-          <WorldMap data={countryData} />
+          <WorldMap data={this.state.data} />
         </div>
         <div className="content-container">
           <div className="section" id="intro">

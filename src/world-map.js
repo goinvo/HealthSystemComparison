@@ -1,9 +1,9 @@
 import React, { Component, createRef } from 'react'
-import { extent } from 'd3-array'
 import { geoMercator, geoPath } from 'd3-geo'
-import { scaleLinear, scaleOrdinal } from 'd3-scale'
+import { scaleOrdinal } from 'd3-scale'
 import { schemeCategory10 } from 'd3-scale-chromatic'
 import { feature } from 'topojson-client'
+import { NodeGroup } from 'react-move';
 
 import countries from 'world-atlas/countries-110m.json'
 const antarcticaId = "010"
@@ -19,8 +19,7 @@ class WorldMap extends Component {
 
     this.state = {
       width,
-      height: width * this.heightFactor,
-      hale: false
+      height: width * this.heightFactor
     }
 
     this.container = createRef();
@@ -35,10 +34,6 @@ class WorldMap extends Component {
     })
   }
 
-  setHale = (e) => {
-    this.setState({ hale: e.target.checked });
-  }
-
   render() {
     const { width, height } = this.state;
 
@@ -47,39 +42,59 @@ class WorldMap extends Component {
     const features = data.features.filter(d => d.id !== antarcticaId);
     const projection = geoMercator()
       .fitSize([width, height], data);
-    const mappedData = new Map(this.props.data.map(country => {
-        return [country.name, { type: country.type, hale: country.hale }];
+    const mappedData = new Map(features.map(country => {
+        return [country.properties.name, { ...country }];
       }));
+
     const color = scaleOrdinal()
       .domain(categories)
       .range(schemeCategory10);
-
-    const haleData = this.props.data.map(d => d.hale);
-    const hale = scaleLinear()
-      .domain(extent(haleData))
-      .range([0, 1]);
 
     return (
       <div className="world-map" ref={this.container}>
         <svg width={ width } height={ height }>
           <g className="countries">
-            {
-              features.map((d, i) => {
-                const obj = mappedData.get(d.properties.name);
-                const opacity = this.state.hale ? ((obj && hale(obj.hale)) || 0) : 1;
-                return (
-                  <path
-                    key={ `path-${ i }` }
-                    d={ geoPath().projection(projection)(d) }
-                    className={`country ${d.type}`}
-                    fill={ obj ? color(obj.type) : '#f0f0f0' }
-                    style={{ opacity: opacity }}
-                    stroke="#FFFFFF"
-                    strokeWidth={ 0.5 }
-                  />
-                )
-              })
-            }
+            <NodeGroup
+              data={ this.props.data }
+              keyAccessor={ d => d.name }
+              start={(d, i) => ({
+                opacity: 0
+              })}
+              enter={(d, i) => {
+                return {
+                  opacity: d.opacity
+                }
+              }}
+              update={(d, i) => {
+                return {
+                  opacity: [d.opacity],
+                  timing: { duration: 750 }
+                }
+              }}
+              leave={(d, i) => ({
+                opacity: [0],
+                timing: { duration: 750 }
+              })}
+            >
+              {(nodes) => (
+                <g>
+                  {nodes.map(({ key, data, state: { opacity } }) => {
+                    const obj = mappedData.get(data.name);
+                    return (
+                      <path
+                        key={key}
+                        d={ geoPath().projection(projection)(obj) }
+                        className={`country ${data.name}`}
+                        fill={ data.type ? color(data.type) : '#f0f0f0' }
+                        opacity={opacity}
+                        stroke="#FFFFFF"
+                        strokeWidth={ 0.5 }
+                      />
+                    )
+                  })}
+                </g>
+              )}
+            </NodeGroup>
           </g>
         </svg>
         <ul className="legend">
@@ -87,7 +102,6 @@ class WorldMap extends Component {
             return <li key={d}><div className="legend__block" style={{ backgroundColor: color(d) }}></div> {d}</li>
           })}
         </ul>
-        <input type="checkbox" checked={this.state.hale} onChange={this.setHale} />
       </div>
     )
   }
