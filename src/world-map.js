@@ -6,9 +6,6 @@ import { schemeCategory10 } from 'd3-scale-chromatic'
 import { feature } from 'topojson-client'
 
 import countries from 'world-atlas/countries-110m.json'
-import countryData from './data.json'
-
-const systemTypes = ["Universal", "Universal-Income", "Private-Public", "Private-Subsidized", "Private-Partially-Subsidized"]
 const antarcticaId = "010"
 
 // TODO: Stopped data at Kiribati
@@ -45,18 +42,19 @@ class WorldMap extends Component {
   render() {
     const { width, height } = this.state;
 
+    const categories = [...new Set(this.props.data.map(d => d.type))].filter(d => d !== null);
     const data = feature(countries, { type: "GeometryCollection", geometries: countries.objects.countries.geometries.filter(d => d.id !== antarcticaId) });
     const features = data.features.filter(d => d.id !== antarcticaId);
     const projection = geoMercator()
       .fitSize([width, height], data);
-    const mappedData = new Map(countryData.map(country => {
+    const mappedData = new Map(this.props.data.map(country => {
         return [country.name, { type: country.type, hale: country.hale }];
       }));
     const color = scaleOrdinal()
-      .domain(["Universal", "Universal-Income", "Private-Public", "Private-Subsidized", "Private-Partially-Subsidized"])
+      .domain(categories)
       .range(schemeCategory10);
 
-    const haleData = countryData.map(d => d.hale);
+    const haleData = this.props.data.map(d => d.hale);
     const hale = scaleLinear()
       .domain(extent(haleData))
       .range([0, 1]);
@@ -85,7 +83,7 @@ class WorldMap extends Component {
           </g>
         </svg>
         <ul className="legend">
-          { systemTypes.map((d, i) => {
+          { categories.map((d, i) => {
             return <li key={d}><div className="legend__block" style={{ backgroundColor: color(d) }}></div> {d}</li>
           })}
         </ul>
